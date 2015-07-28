@@ -5,9 +5,16 @@
   background-color: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 42em ;
+    padding: 1;
+}
 .fosnt-smoothing {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -21,14 +28,51 @@
   font-size: 5em;
 }
 
+.denominators {
+  text-align: center;
+}
+
 .subtitle {
   margin-top: auto;
-  text-align: center;
   font-weight: 300;
+  text-decoration: none;
+  display: inline;
+  padding: .2em 1em;
 }
+
 div, h1{
   color:black;
 }
 .description-list {
   color: red;
+}
+
+/**/
+#navcontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#navcontainer ul li { display: inline; }
+
+#navcontainer ul li a
+{
+text-decoration: none;
+padding: .2em 1em;
+color: #000;
+
+/*
+background-color: #036;
+
+*/
+}
+
+#navcontainer ul li a:hover
+{
+color: #fff;
+
+background-color: #000;
 }
