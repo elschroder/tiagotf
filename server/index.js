@@ -42,4 +42,4 @@ app
 app.use(staticFolder("./client/assets/styles",'path'))
 
 console.log('listening ')
-app.listen(3000 || PORT)
+app.listen(process.env.PORT || 6100)
