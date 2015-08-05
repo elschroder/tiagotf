@@ -29,5 +29,7 @@ app
   .use(router.routes())
   .use(router.allowedMethods())
 
-app.use(staticFolder("./client/assets/styles",'path'))
+  app.use(staticFolder("./client/assets/styles",'path'))
+  app.use(staticFolder("./client/assets/images",'path'))
+
 app.listen(process.env.PORT || 3000)
