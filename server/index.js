@@ -2,6 +2,7 @@ import staticFolder from 'koa-static-folder'
 import koa from 'koa'
 import Router from 'koa-router'
 import handlebars from 'koa-handlebars'
+import gzip from 'koa-gzip'
 
 var app = module.exports = koa()
 var router = new Router()
@@ -28,8 +29,8 @@ router.get('/', function *(next) {
 app
   .use(router.routes())
   .use(router.allowedMethods())
-
-  app.use(staticFolder("./client/assets/styles",'path'))
-  app.use(staticFolder("./client/assets/images",'path'))
-
+  .use(staticFolder("./client/assets/styles",'path'))
+  .use(staticFolder("./client/assets/images",'path'))
+  .use(gzip())
+  
 app.listen(process.env.PORT || 3000)
