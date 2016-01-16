@@ -29,8 +29,8 @@ router.get('/', function *(next) {
 app
   .use(router.routes())
   .use(router.allowedMethods())
-  .use(staticFolder("./client/assets/styles",'path'))
-  .use(staticFolder("./client/assets/images",'path'))
+  .use(staticFolder("./client/assets/styles",'root', {maxage: 5 * 60 * 1000}))
+  .use(staticFolder("./client/assets/images",'root', {maxage: 5 * 60 * 1000}))
   .use(gzip())
   
 app.listen(process.env.PORT || 3000)
