@@ -46,7 +46,7 @@ hr {
   margin-top: 8rem;
   margin-bottom: 1rem;
   font-weight: 300;
-  font-size: 5em;
+  font-size: 70px;
 }
 
 #denominators {
@@ -59,6 +59,8 @@ hr {
 
 .subtitle {
   margin-top: auto;
+  font-size: 30px;
+  
   font-weight: 300;
   text-decoration: none;
   display: inline;
@@ -90,7 +92,7 @@ div, h1{ color:black; }
 }
 
 #navcontainer {
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 
 }
 html,body {
@@ -188,8 +190,16 @@ html,body {
 
 /* from base*/
 .container {
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 60%;
+  margin: auto auto;
+}
+
+.container div {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.container h2 {
+  font-size: 2em;
+  padding: 20px;
 }
