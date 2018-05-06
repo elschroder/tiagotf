@@ -9,11 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel": "^5.8.9",
-    "koa": "^0.21.0",
-    "koa-gzip": "^0.1.0",
-    "koa-handlebars": "^0.5.7",
-    "koa-router": "^5.1.2",
-    "koa-static-folder": "0.1.5"
+    "express": "^4.16.3",
+    "serve-static": "^1.13.2"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0"
   }
 }
